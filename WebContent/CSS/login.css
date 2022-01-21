@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;  
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {  
+    position: relative;
+    height: 100%;
+  }
+
+
+header {
+    width: 100%;
+    height : 300px;
+    background-image: url(../CSS/image/logoheader.png);
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    background-position: center;
+}
+
+#longin_line {
+	background-image: url(../CSS/image/login_line.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	margin: 0px auto;
+	background-position: center;
+}
+
+table{
+    text-align: center;
+    margin: 0px auto;
+    width: 400px;
+
+}
+
+.b3_butoon {
+    color: #000000;
+    border: #000000 solid 1px;
+    padding: 5px;
+    background-color: #ad98ad;
+}
+
+.b3_butoon:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 13px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}

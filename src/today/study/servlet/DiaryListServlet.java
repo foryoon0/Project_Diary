@@ -23,6 +23,8 @@ import today.study.vo.DiaryVO;
 @WebServlet("/member/DLS")
 public class DiaryListServlet extends HttpServlet {
 	
+	
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		DiaryDAO dao = DiaryDAO.getInstance();
 		

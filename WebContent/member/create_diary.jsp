@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS/creatediary.css">
 <title>Insert title here</title>
 </head>
 <body>
-
+<header></header>
 <form action="CDS" method="GET">
 	<fieldset>
 		<legend>오늘의 일기 작성</legend>
@@ -19,6 +20,8 @@
 		
 	</fieldset>
 </form>
+
+
 
 </body>
 </html>
