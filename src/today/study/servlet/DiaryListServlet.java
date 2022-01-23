@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.green.vo.MemberVO;
-
 import today.study.dao.DiaryDAO;
 import today.study.vo.DiaryVO;
 
@@ -23,27 +21,22 @@ import today.study.vo.DiaryVO;
 @WebServlet("/member/DLS")
 public class DiaryListServlet extends HttpServlet {
 	
-	
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		DiaryDAO dao = DiaryDAO.getInstance();
 		
-		HttpSession session = request.getSession();
-		MemberVO mVo = new MemberVO();
+		String command = request.getParameter("command");
 		
-		mVo = (MemberVO)session.getAttribute("loginUser");
+		System.out.println("받아온 command : " + command);
+		if(command == null) {
+			command = "paging";
+			System.out.println("여기안들어오니");
+		}
 		
-		System.out.println("loginUser : " + mVo);
+		ActionFactory af = ActionFactory.getInstance();
+		Action action = af.getAction(command);
 		
-		//String userid = mVo.getUserid();
-		
-		
- 		List<DiaryVO> dList = new ArrayList<>();
- 		dList = dao.getDiary(mVo.getUserid());
-		
-		request.setAttribute("dList", dList);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("diary_main.jsp");
-		dispatcher.forward(request, response);
+		if(action != null) {
+			action.execute(request,response);   // Action타입은 execute메서드를 강제로 발현하는 인터페이스
+		}
 				
 	}
 

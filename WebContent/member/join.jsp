@@ -54,8 +54,9 @@
 
 			<tr>
 				<td colspan="2"><input type="submit" value="회원 가입"
-					onclick="return joinCheck()"> <input type="reset"
-					value="취소"></td>
+					onclick="return joinCheck()" class="button_base b2_butoon second">
+
+				
 			</tr>
 		</table>
 	</form>

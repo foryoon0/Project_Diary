@@ -45,3 +45,45 @@ header {
     box-shadow: 3px 3px 8px 0px black;
 }
 
+.diarybody{
+	margin: 0 auto;
+	display: flex;
+ 	justify-content: flex-end;
+	width:510px;
+}
+.pagingbody{
+	margin: 0 auto;
+	display: flex;
+ 	justify-content: space-between;
+	width:350px;
+}
+.scrollbody{
+	margin: 0 auto;
+	/* display: flex;
+ 	justify-content: space-between; */
+	width:350px;
+}
+.td_color1{
+	background-color:rgb(245, 174, 174);
+}
+.td_color2{
+	background-color:rgb(250, 209, 146);
+}
+.td_color3{
+	background-color:rgb(248, 246, 149);
+}
+.td_color4{
+	background-color:rgb(197, 243, 159);
+}
+.td_color5{
+	background-color:rgb(184, 199, 248);
+}
+.td_color6{
+	background-color:rgb(200, 171, 253);
+}
+.td_color7{
+	background-color:rgb(228, 174, 245);
+}
+
+
+
